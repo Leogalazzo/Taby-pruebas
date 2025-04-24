@@ -1,0 +1,209 @@
+/* RESET Y ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFF5F7; /* Fondo rosa muy claro */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* CONTENEDOR PRINCIPAL */
+#dashboard {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    border: 1px solid #FFE5E9; /* Borde rosa claro */
+}
+
+/* TÍTULOS */
+h1 {
+    color: #D14D72; /* Rosa más intenso para títulos */
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: 2px solid #FFABAB; /* Línea decorativa */
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #D14D72;
+    margin: 20px 0 15px;
+    font-size: 1.5rem;
+}
+
+/* SECCIÓN DE ESTADÍSTICAS */
+#stats {
+    background-color: #FFEEF4; /* Fondo rosa pastel */
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    border: 1px solid #FFD1DC; /* Borde más claro */
+}
+
+#stats p {
+    font-size: 1.1rem;
+    color: #8A4F7D; /* Texto morado-rosado */
+    font-weight: 500;
+}
+
+#stats span {
+    font-weight: bold;
+    color: #D14D72;
+}
+
+/* LISTA DE PRODUCTOS */
+#product-list {
+    background-color: #FFF9FB; /* Fondo casi blanco con tono rosa */
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #FFD1DC;
+}
+
+#product-list-ul {
+    list-style-type: none;
+}
+
+#product-list-ul li {
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    background-color: white;
+    border-radius: 8px;
+    border-left: 4px solid #FFABAB; /* Acento rosa */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+#product-list-ul li:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* FORMULARIO PARA AGREGAR PRODUCTOS */
+#add-product {
+    background-color: #FFEEF4;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #FFD1DC;
+}
+
+#add-product input {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #FFD1DC;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+#add-product input:focus {
+    outline: none;
+    border-color: #D14D72;
+    box-shadow: 0 0 0 3px rgba(209, 77, 114, 0.1);
+}
+
+/* BOTONES */
+button {
+    background-color: #D14D72;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #B23A5B;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#add-product button {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+/* BOTÓN DE CERRAR SESIÓN */
+#dashboard > button:last-child {
+    background-color: #FFABAB;
+    display: block;
+    margin: 0 auto;
+}
+
+#dashboard > button:last-child:hover {
+    background-color: #E89999;
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #dashboard {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #stats {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #add-product, #product-list {
+        padding: 15px;
+    }
+}
+
+/* ESTILOS PARA EL INPUT DE ARCHIVO */
+#product-image {
+    padding: 10px;
+    background-color: white;
+    border: 1px dashed #FFABAB;
+}
+
+#product-image::-webkit-file-upload-button {
+    background-color: #FFD1DC;
+    color: #8A4F7D;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#product-image::-webkit-file-upload-button:hover {
+    background-color: #FFABAB;
+    color: white;
+}

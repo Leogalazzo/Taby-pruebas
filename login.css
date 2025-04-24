@@ -1,0 +1,142 @@
+/* RESET Y ESTILOS BASE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #FFF5F7; /* Fondo rosa muy claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* CONTENEDOR DEL FORMULARIO */
+#login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #FFE5E9; /* Borde rosa claro */
+    text-align: center;
+}
+
+/* TÍTULO */
+#login-form h2 {
+    color: #D14D72; /* Rosa intenso */
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+#login-form h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #FFABAB; /* Rosa pastel */
+}
+
+/* INPUTS */
+#login-form input {
+    display: block;
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border: 1px solid #FFD1DC; /* Borde rosa claro */
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #FFF9FB; /* Fondo ligeramente rosado */
+}
+
+#login-form input:focus {
+    outline: none;
+    border-color: #D14D72;
+    box-shadow: 0 0 0 3px rgba(209, 77, 114, 0.1);
+}
+
+#login-form input::placeholder {
+    color: #C98BA0; /* Rosa grisáceo para placeholder */
+}
+
+/* BOTÓN */
+#login-form button {
+    background-color: #D14D72;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#login-form button:hover {
+    background-color: #B23A5B;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* EFECTO DE CARGA (opcional para cuando se envía el formulario) */
+#login-form.loading button {
+    position: relative;
+    color: transparent;
+}
+
+#login-form.loading button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* DISEÑO RESPONSIVO */
+@media (max-width: 600px) {
+    #login-form {
+        padding: 30px;
+    }
+    
+    #login-form h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #login-form {
+        padding: 25px 20px;
+    }
+    
+    #login-form input {
+        padding: 12px 15px;
+    }
+    
+    #login-form button {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administración</title>
+    <link rel="stylesheet" href="dashstyle.css" />
+</head>
+<body>
+    <div id="dashboard">
+        <h1>TabyMakeup - Administración</h1>
+        <div id="stats">
+            <p>Total de productos: <span id="product-count"></span></p>
+            <p>Ventas del mes: <span id="sales-month"></span></p>
+        </div>
+
+        <div id="product-list">
+            <h2>Productos</h2>
+            <ul id="product-list-ul">
+                <!-- Aquí se cargarán los productos -->
+            </ul>
+        </div>
+
+        <div id="add-product">
+            <h2>Agregar Producto</h2>
+            <input type="text" id="product-name" placeholder="Nombre del producto" required>
+            <input type="number" id="product-price" placeholder="Precio" required>
+            <input type="file" id="product-image" accept="image/*">
+            <button onclick="addProduct()">Agregar Producto</button>
+        </div>
+
+        <button onclick="logout()">Cerrar sesión</button>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "YOUR_API_KEY",
+            authDomain: "YOUR_AUTH_DOMAIN",
+            projectId: "YOUR_PROJECT_ID",
+            storageBucket: "YOUR_STORAGE_BUCKET",
+            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
+            appId: "YOUR_APP_ID"
+        };
+
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const firestore = firebase.firestore();
+        const storage = firebase.storage();
+
+        // Función para cargar productos desde Firestore
+        function loadProducts() {
+            const productList = document.getElementById('product-list-ul');
+            firestore.collection('productos').get()
+                .then((querySnapshot) => {
+                    querySnapshot.forEach((doc) => {
+                        const product = doc.data();
+                        const li = document.createElement('li');
+                        li.textContent = `${product.nombre} - $${product.precio}`;
+                        productList.appendChild(li);
+                    });
+                });
+        }
+
+        // Función para obtener estadísticas
+        function loadStats() {
+            firestore.collection('productos').get()
+                .then((querySnapshot) => {
+                    const totalProducts = querySnapshot.size;
+                    document.getElementById('product-count').textContent = totalProducts;
+                });
+        }
+
+        // Cargar productos y estadísticas al iniciar
+        window.onload = function() {
+            loadProducts();
+            loadStats();
+        };
+
+        // Función para cerrar sesión
+        function logout() {
+            auth.signOut().then(() => {
+                window.location.href = "login.html"; // Redirige al login
+            });
+        }
+
+        // Función para agregar producto
+        function addProduct() {
+            const name = document.getElementById('product-name').value;
+            const price = document.getElementById('product-price').value;
+            const imageFile = document.getElementById('product-image').files[0];
+
+            if (imageFile) {
+                const storageRef = storage.ref(`productos/${imageFile.name}`);
+                storageRef.put(imageFile)
+                    .then((snapshot) => {
+                        return snapshot.ref.getDownloadURL();
+                    })
+                    .then((imageUrl) => {
+                        firestore.collection('productos').add({
+                            nombre: name,
+                            precio: price,
+                            imagen: imageUrl,
+                        }).then(() => {
+                            alert('Producto agregado');
+                            window.location.reload();
+                        });
+                    });
+            } else {
+                alert('Por favor, selecciona una imagen.');
+            }
+        }
+    </script>
+</body>
+</html>
