@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TabyMakeup</title>
+  <link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script&display=swap" rel="stylesheet">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox-plus-jquery.min.js"></script>  
+  <link rel="icon" href="logo-png1.png" type="image/webp">
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N8X2J1R1G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9N8X2J1R1G');
+</script>
+</head>
+<body>
+  
+  <header>
+    <h1 class="logo">
+      <span class="nombre">Taby</span><span class="makeup">Makeup</span>
+    </h1>
+    <button id="scrollTopBtn" title="Volver arriba">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    
+    
+    <a href="carrito.html" class="carrito-flotante" data-count="0">
+      🛒
+      <span class="carrito-contador">0</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#todos">Todos los productos</a></li>
+        <li><a href="#iluminadores">Iluminadores y contornos</a></li>
+        <li><a href="#base">Base</a></li>
+        <li><a href="#brochas">Brochas</a></li>
+        <li><a href="#delineadores">Delineadores</a></li>
+        <li><a href="#fijador">Fijador</a></li>
+        <li><a href="#mascara">Máscara de pestañas</a></li>
+        <li><a href="#polvos">Polvos</a></li>
+        <li><a href="#rubor">Rubor</a></li>
+        <li><a href="#sombras">Sombras</a></li>
+        <li><a href="#arqueadores">Arqueadores</a></li>
+        <li><a href="#brillos">Brillos/Glitter</a></li>
+        <li><a href="#correctores">Correctores</a></li>
+        <li><a href="#esponjitas">Esponjitas</a></li>
+        <li><a href="#labiales">Labiales</a></li>
+        <li><a href="#pestanas-cejas">Pestaña/Cejas</a></li>
+        <li><a href="#primer">Primer</a></li>
+        <li><a href="#skincare">Skincare</a></li>
+        <li><a href="#uñas">Uñas</a></li>
+        <li><a href="#skalas">Skalas</a></li>
+        <li><a href="#varios">Varios</a></li>
+      </ul>
+    </nav> 
+  </header>
+  
+
+  <section class="banner-bienvenida">
+    <div class="banner-content">
+      <h2>¡Bienvenidos a <span class="resaltado">TabyMakeup</span>!</h2>
+      <p>Gracias por visitarnos, estamos acá para ayudarte a encontrar el maquillaje ideal para realzar tu belleza.</p>
+      <div class="redes-sociales">
+        <a href="https://www.instagram.com/taby.makeup/" target="_blank" aria-label="Instagram" class="icono-red">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/jemimavillalba" target="_blank" aria-label="Facebook" class="icono-red">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <input type="text" id="searchInput" placeholder="Buscar producto..." />
+  <main>
+    <!-- Todos los productos -->
+    <section id="todos" class="seccion-productos">
+      <h2>Todos los productos</h2>
+      <div class="productos-container" id="contenedor-todos"></div>
+    </section>
+   
+    <!-- Iluminadores y contornos -->
+    <section id="iluminadores" class="seccion-productos">
+      <h2>Iluminadores y contornos</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/contorno-iluminador-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/contorno-iluminador-dhermosa.webp" alt="Contorno + Iluminador D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Contorno + Iluminador D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="1" data-nombre="Contorno + Iluminador D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+
+        
+      </div>
+    </section>
+    
+    <!-- Base -->
+    <section id="base" class="seccion-productos">
+      <h2>Base</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-en-barra-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-en-barra-dhermosa.webp" alt="Base en barra D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Base en barra D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="2" data-nombre="Base en barra D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-acabadomatte-tg.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-acabadomatte-tg.webp" alt="Base acabado matte T&G" class="imagen-producto">
+          </a>
+          <h3>Base acabado matte T&G</h3>
+          <p>Precio: $<span class="precio">4.800</span></p>
+          <button class="agregar-carrito" data-id="3" data-nombre="Base acabado matte T&G" data-precio="4800">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-con-vitaminaC-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-con-vitaminaC-dhermosa.webp" alt="Base con vitamina C D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Base con vitamina C D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.600</span></p>
+          <button class="agregar-carrito" data-id="4" data-nombre="Base con vitamina C D´hermosa" data-precio="3600">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/base-dhermosa.webp" alt="Base D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Base D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="5" data-nombre="Base D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Brochas -->
+    <section id="brochas" class="seccion-productos">
+      <h2>Brochas</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/set-de-brochas.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/set-de-brochas.webp" alt="Set de brochas" class="imagen-producto">
+          </a>
+          <h3>Set de brochas (paquete)</h3>
+          <p>Precio: $<span class="precio">20.000</span></p>
+          <button class="agregar-carrito" data-id="6" data-nombre="Set de brochas (paquete)" data-precio="20000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/set-de-brochas.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/set-de-brochas.webp" alt="Set de brochas" class="imagen-producto">
+          </a>
+          <h3>Set de brochas (unidad)</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="6" data-nombre="Set de brochas (unidad)" data-precio="3500">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas1.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas1.webp" alt="Brochas para difuminar" class="imagen-producto">
+          </a>
+          <h3>Brocha para difuminar</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="7" data-nombre="Brochas para difuminar" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas2.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas2.webp" alt="Brochas para difuminar" class="imagen-producto">
+          </a>
+          <h3>Brocha para difuminar</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="8" data-nombre="Brochas para difuminar" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas3.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas3.webp" alt="Brochas para difuminar" class="imagen-producto">
+          </a>
+          <h3>Brocha de precisión</h3>
+          <p>Precio: $<span class="precio">2.500</span></p>
+          <button class="agregar-carrito" data-id="9" data-nombre="Brochas para difuminar" data-precio="2500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas4.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas4.webp" alt="Brochas para difuminar" class="imagen-producto">
+          </a>
+          <h3>Brocha para difuminar</h3>
+          <p>Precio: $<span class="precio">2.500</span></p>
+          <button class="agregar-carrito" data-id="10" data-nombre="Brochas para difuminar" data-precio="2500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas5.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/brochas5.webp" alt="Brochas para difuminar" class="imagen-producto">
+          </a>
+          <h3>Brocha para difuminar</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="11" data-nombre="Brochas para difuminar" data-precio="3500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+     <!-- Delineadores -->
+     <section id="delineadores" class="seccion-productos">
+      <h2>Delineadores</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-2-en-1-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-2-en-1-dhermosa.webp" alt="Delineador 2 en 1 D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Delineador 2 en 1 D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.800</span></p>
+          <button class="agregar-carrito" data-id="12" data-nombre="Delineador 2 en 1 D´hermosa" data-precio="3800">Agregar al carrito</button>
+        </div>
+  
+     
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-liquido-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-liquido-dhermosa.webp" alt="Delineador líquido D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Delineador líquido D´hermosa</h3>
+          <p>Precio: $<span class="precio">2.500</span></p>
+          <button class="agregar-carrito" data-id="13" data-nombre="Delineador líquido D´hermosa" data-precio="2500">Agregar al carrito</button>
+        </div>
+      
+
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-liquido-tango.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-liquido-tango.webp" alt="Delineador líquido Tango" class="imagen-producto">
+        </a>
+        <h3>Delineador líquido Tango</h3>
+        <p>Precio: $<span class="precio">3.000</span></p>
+        <button class="agregar-carrito" data-id="14" data-nombre="Delineador líquido Tango" data-precio="3000">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-fibra-MCcosmetics.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-fibra-MCcosmetics.webp" alt="Delineador fibra MC cosmetics" class="imagen-producto">
+        </a>
+        <h3>Delineador fibra MC cosmetics</h3>
+        <p>Precio: $<span class="precio">3.000</span></p>
+        <button class="agregar-carrito" data-id="15" data-nombre="Delineador fibra MC cosmetics" data-precio="3000">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-blanco.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-blanco.webp" alt="Delineador blanco lapiz" class="imagen-producto">
+        </a>
+        <h3>Delineador blanco lapiz</h3>
+        <p>Precio: $<span class="precio">1.000</span></p>
+        <button class="agregar-carrito" data-id="16" data-nombre="Delineador blanco lapiz" data-precio="1000">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-negro.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-negro.webp" alt="Delineador negro lapiz" class="imagen-producto">
+        </a>
+        <h3>Delineador negro lapiz</h3>
+        <p>Precio: $<span class="precio">1.000</span></p>
+        <button class="agregar-carrito" data-id="17" data-nombre="Delineador negro lapiz" data-precio="1000">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-marron.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-marron.webp" alt="Delineador marrón lapiz" class="imagen-producto">
+        </a>
+        <h3>Delineador marrón lapiz</h3>
+        <p>Precio: $<span class="precio">1.000</span></p>
+        <button class="agregar-carrito" data-id="18" data-nombre="Delineador marrón lapiz" data-precio="1000">Agregar al carrito</button>
+      </div>
+  
+    <div class="producto">
+      <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-doble-tango.webp" data-lightbox="galeria" data-title="">
+        <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/delineador-doble-tango.webp" alt="Delineador doble Tango" class="imagen-producto">
+      </a>
+      <h3>Delineador doble Tango</h3>
+      <p>Precio: $<span class="precio">4.800</span></p>
+      <button class="agregar-carrito" data-id="19" data-nombre="Delineador doble Tango" data-precio="4800">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lapiz-para-cejas-dhermosa.webp" data-lightbox="galeria" data-title="">
+        <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lapiz-para-cejas-dhermosa.webp" alt="Lápiz para cejas D´hermosa" class="imagen-producto">
+      </a>
+      <h3>Lápiz para cejas D´hermosa</h3>
+      <p>Precio: $<span class="precio">2.500</span></p>
+      <button class="agregar-carrito" data-id="20" data-nombre="Lápiz para cejas D´hermosa" data-precio="2500">Agregar al carrito</button>
+    </div>
+
+  </div>
+    </section>
+
+    <!-- Fijador -->
+    <section id="fijador" class="seccion-productos">
+      <h2>Fijador</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/fijador-con-destellos.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/fijador-con-destellos.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Fijador con destellos</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="21" data-nombre="Fijador con destellos" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/fijador-de-maquillaje-acabado-matte.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/fijador-de-maquillaje-acabado-matte.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Fijador de maquillaje acabado matte</h3>
+          <p>Precio: $<span class="precio">3500</span></p>
+          <button class="agregar-carrito" data-id="22" data-nombre="Fijador de maquillaje acabado matte" data-precio="3500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Máscara de pestañas -->
+    <section id="mascara" class="seccion-productos">
+      <h2>Máscara de pestañas</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara4d-tango.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara4d-tango.webp" alt="Mascara 4D Tango" class="imagen-producto">
+          </a>
+          <h3>Mascara 4D Tango</h3>
+          <p>Precio: $<span class="precio">5.600</span></p>
+          <button class="agregar-carrito" data-id="23" data-nombre="Mascara 4D Tango" data-precio="5600">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-de-pestañas-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-de-pestañas-dhermosa.webp" alt="Mascara de pestañas D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Mascara de pestañas D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="24" data-nombre="Mascara de pestañas D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-fijadora-transparente-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-fijadora-transparente-dhermosa.webp" alt="Mascara fijadora transparente D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Mascara fijadora transparente D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="25" data-nombre="Mascara fijadora transparente D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-de-pestañas-dhermosa-curved.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mascara-de-pestañas-dhermosa-curved.webp" alt="Mascara de pestañas D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Mascara de pestañas D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.800</span></p>
+          <button class="agregar-carrito" data-id="26" data-nombre="Mascara de pestañas D´hermosa" data-precio="3800">Agregar al carrito</button>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- Polvos -->
+    <section id="polvos" class="seccion-productos">
+      <h2>Polvos</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa.webp" alt="Polvo compacto D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo compacto D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.000</span></p>
+          <button class="agregar-carrito" data-id="27" data-nombre="Polvo compacto D´hermosa" data-precio="3000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-de-hadas-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-de-hadas-dhermosa.webp" alt="Polvo de hadas D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo de hadas D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.600</span></p>
+          <button class="agregar-carrito" data-id="28" data-nombre="Polvo de hadas D´hermosa" data-precio="3600">Agregar al carrito</button>
+        </div>
+          <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa-face.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa-face.webp" alt="Polvo compacto D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo compacto D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.000</span></p>
+          <button class="agregar-carrito" data-id="29" data-nombre="Polvo compacto D´hermosa" data-precio="3000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa-matte.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-compacto-dhermosa-matte.webp" alt="Polvo compacto D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo compacto D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="30" data-nombre="Polvo compacto D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-suelto-banana-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-suelto-banana-dhermosa.webp" alt="Polvo suelto banana D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo suelto banana D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="31" data-nombre="Polvo suelto banana D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-suelto-shimmer-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/polvo-suelto-shimmer-dhermosa.webp" alt="Polvo suelto shimmer D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Polvo suelto shimmer D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="32" data-nombre="Polvo suelto shimmer D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rubor -->
+    <section id="rubor" class="seccion-productos">
+      <h2>Rubor</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/rubor-en-barra-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/rubor-en-barra-dhermosa.webp" alt="Rubor en barra D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Rubor en barra D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="33" data-nombre="Rubor en barra D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/rubor-duo-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/rubor-duo-dhermosa.webp" alt="Rubor dúo D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Rubor dúo D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.800</span></p>
+          <button class="agregar-carrito" data-id="34" data-nombre="Rubor dúo D´hermosa" data-precio="3800">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sombras -->
+    <section id="sombras" class="seccion-productos">
+      <h2>Sombras</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/sombra-nude-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/sombra-nude-dhermosa.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Sombra Nude D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="35" data-nombre="Sombra Nude D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arqueadores -->
+    <section id="arqueadores" class="seccion-productos">
+      <h2>Arqueadores</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-celeste.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-celeste.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Arqueador de pestañas celeste</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="36" data-nombre="Arqueador de pestañas celeste" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-rosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-rosa.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Arqueador de pestañas rosado</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="37" data-nombre="Arqueador de pestañas rosado" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-morado.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/arqueador-de-pestañas-morado.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Arqueador de pestañas morado</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="38" data-nombre="Arqueador de pestañas morado" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/repuesto-para-arqueador.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/repuesto-para-arqueador.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Repuesto para arqueador (paquete)</h3>
+          <p>Precio: $<span class="precio">2.000</span></p>
+          <button class="agregar-carrito" data-id="39" data-nombre="Repuesto para arqueador (paquete)" data-precio="2000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/repuesto-para-arqueador.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/repuesto-para-arqueador.webp" alt="  " class="imagen-producto">
+          </a>
+          <h3>Repuesto para arqueador (unidad)</h3>
+          <p>Precio: $<span class="precio">500</span></p>
+          <button class="agregar-carrito" data-id="40" data-nombre="Repuesto para arqueador (unidad)" data-precio="500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brillos/Glitter -->
+    <section id="brillos" class="seccion-productos">
+      <h2>Brillos/Glitter</h2>
+      
+    </section>
+    
+    <!-- Correctores -->
+    <section id="correctores" class="seccion-productos">
+      <h2>Correctores</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-alta-cobertura-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-alta-cobertura-dhermosa.webp" alt="Corrector alta cobertura D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Corrector alta cobertura D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="41" data-nombre="Corrector alta cobertura D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-dhermosa.webp" alt="Corrector D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Corrector D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="42" data-nombre="Corrector D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-mccosmetics.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/corrector-mccosmetics.webp" alt="Corrector MC cosmetics" class="imagen-producto">
+          </a>
+          <h3>Corrector MC cosmetics</h3>
+          <p>Precio: $<span class="precio">4.800</span></p>
+          <button class="agregar-carrito" data-id="43" data-nombre="Corrector MC cosmetics" data-precio="4800">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Esponjitas -->
+    <section id="esponjitas" class="seccion-productos">
+      <h2>Esponjitas</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjitas-para-maquillaje.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjitas-para-maquillaje.webp" alt="Esponjitas para maquillaje" class="imagen-producto">
+          </a>
+          <h3>Esponjitas para maquillaje</h3>
+          <p>Precio: $<span class="precio">2.000</span></p>
+          <button class="agregar-carrito" data-id="44" data-nombre="Esponjitas para maquillaje" data-precio="2000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/cisne-triangular.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/cisne-triangular.webp" alt="Cisne triangular" class="imagen-producto">
+          </a>
+          <h3>Cisne triangular</h3>
+          <p>Precio: $<span class="precio">1.500</span></p>
+          <button class="agregar-carrito" data-id="45" data-nombre="Cisne triangular" data-precio="1500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjita-rubyrose-angle.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjita-rubyrose-angle.webp" alt="Esponjita Ruby Rose" class="imagen-producto">
+          </a>
+          <h3>Esponjita Ruby Rose</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="46" data-nombre="Esponjita Ruby Rose" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjita-rubyrose-soft.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponjita-rubyrose-soft.webp" alt="Esponjita Ruby Rose" class="imagen-producto">
+          </a>
+          <h3>Esponjita Ruby Rose</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="47" data-nombre="Esponjita Ruby Rose" data-precio="3500">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponja-limpieza-facial-azul-amarillo.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponja-limpieza-facial-azul-amarillo.webp" alt="Esponja de limpieza facial" class="imagen-producto">
+          </a>
+          <h3>Esponja de limpieza facial</h3>
+          <p>Precio: $<span class="precio">3.000</span></p>
+          <button class="agregar-carrito" data-id="48" data-nombre="Esponja de limpieza facial" data-precio="3000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponja-limpieza-facial-pink21.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/esponja-limpieza-facial-pink21.webp" alt="Esponja de limpieza facial" class="imagen-producto">
+          </a>
+          <h3>Esponja de limpieza facial Pink 21</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="49" data-nombre="Esponja de limpieza facial Pink 21" data-precio="3500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Labiales -->
+    <section id="labiales" class="seccion-productos">
+      <h2>Labiales</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labial-2en1-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labial-2en1-dhermosa.webp" alt="Labial 2 en 1 D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Labial 2 en 1 D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.600</span></p>
+          <button class="agregar-carrito" data-id="50" data-nombre="Labial 2 en 1 D´hermosa" data-precio="3600">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labial-matte-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labial-matte-dhermosa.webp" alt="Labial matte D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Labial matte D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.000</span></p>
+          <button class="agregar-carrito" data-id="51" data-nombre="Labial matte D´hermosa" data-precio="3000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labiales-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labiales-dhermosa.webp" alt="Labiales D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Labiales D´hermosa</h3>
+          <p>Precio: $<span class="precio">1.200</span></p>
+          <button class="agregar-carrito" data-id="52" data-nombre="Labiales D´hermosa" data-precio="1200">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/balsamo-magico-hidratante-tango.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/balsamo-magico-hidratante-tango.webp" alt="Balsamo mágico hidratante - Tango" class="imagen-producto">
+          </a>
+          <h3>Balsamo mágico hidratante Tango</h3>
+          <p>Precio: $<span class="precio">2.500</span></p>
+          <button class="agregar-carrito" data-id="53" data-nombre="Balsamo mágico hidratante - Tango" data-precio="2500">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-balm-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-balm-dhermosa.webp" alt="Lip Balm D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Lip Balm D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="54" data-nombre="Lip Balm D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-gloss-shimmer-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-gloss-shimmer-dhermosa.webp" alt="Lip Gloss shimmer D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Lip Gloss shimmer D´hermosa</h3>
+          <p>Precio: $<span class="precio">3.500</span></p>
+          <button class="agregar-carrito" data-id="55" data-nombre="Lip Gloss shimmer D´hermosa" data-precio="3500">Agregar al carrito</button>
+        </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-doble-dhermosa.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-doble-dhermosa.webp" alt="Gloss doble D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Gloss doble D´hermosa</h3>
+        <p>Precio: $<span class="precio">4.500</span></p>
+        <button class="agregar-carrito" data-id="56" data-nombre="Gloss doble D´hermosa" data-precio="4500">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-con-color.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-con-color.webp" alt="Gloss con color D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Gloss con color D´hermosa</h3>
+        <p>Precio: $<span class="precio">3.800</span></p>
+        <button class="agregar-carrito" data-id="57" data-nombre="Gloss con color D´hermosa" data-precio="3800">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-magico-dhermosa-animado.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-magico-dhermosa-animado.webp" alt="Gloss mágico D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Gloss mágico D´hermosa</h3>
+        <p>Precio: $<span class="precio">3.000</span></p>
+        <button class="agregar-carrito" data-id="58" data-nombre="Gloss mágico D´hermosa" data-precio="3000">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labialdoblegloss-glossshimmer-dhermosa.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/labialdoblegloss-glossshimmer-dhermosa.webp" alt="Labial doble + Gloss Shimmer D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Labial doble + Gloss Shimmer D´hermosa</h3>
+        <p>Precio: $<span class="precio">4.500</span></p>
+        <button class="agregar-carrito" data-id="59" data-nombre="Labial doble + Gloss Shimmer D´hermosa" data-precio="4500">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-magico-dhermosa.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gloss-magico-dhermosa.webp" alt="Gloss mágico D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Gloss mágico D´hermosa</h3>
+        <p>Precio: $<span class="precio">3.500</span></p>
+        <button class="agregar-carrito" data-id="60" data-nombre="Gloss mágico D´hermosa" data-precio="3500">Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-oil-roll-on-dhermosa.webp" data-lightbox="galeria" data-title="">
+          <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/lip-oil-roll-on-dhermosa.webp" alt="Lip oil roll on D´hermosa" class="imagen-producto">
+        </a>
+        <h3>Lip oil roll on D´hermosa</h3>
+        <p>Precio: $<span class="precio">2.000</span></p>
+        <button class="agregar-carrito" data-id="61" data-nombre="Lip oil roll on D´hermosa" data-precio="2000">Agregar al carrito</button>
+      </div>
+
+    </div>
+
+    </section>
+
+    <!-- Pestaña/Cejas -->
+    <section id="pestañas" class="seccion-productos">
+      <h2>Pestañas/Cejas</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/tratamiento-cejas-pestañas.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/tratamiento-cejas-pestañas.webp" alt="Tratamiento cejas/pestañas" class="imagen-producto">
+          </a>
+          <h3>Tratamiento cejas/pestañas</h3>
+          <p>Precio: $<span class="precio">3.800</span></p>
+          <button class="agregar-carrito" data-id="63" data-nombre="Tratamiento cejas/pestañas" data-precio="3800">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gel-de-cejas.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/gel-de-cejas.webp" alt="Gel de cejas" class="imagen-producto">
+          </a>
+          <h3>Gel de cejas</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="64" data-nombre="Gel de cejas" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/pegamento-de-pestañas-mccosmetics.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/pegamento-de-pestañas-mccosmetics.webp" alt="Pegamento de pestañas MC cosmetics" class="imagen-producto">
+          </a>
+          <h3>Pegamento de pestañas MC cosmetics</h3>
+          <p>Precio: $<span class="precio">2.000</span></p>
+          <button class="agregar-carrito" data-id="65" data-nombre="Pegamento de pestañas MC cosmetics" data-precio="2000">Agregar al carrito</button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Primer -->
+    <section id="primer" class="seccion-productos">
+      <h2>Primer</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-tango.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-tango.webp" alt="Primer Tango" class="imagen-producto">
+          </a>
+          <h3>Primer Tango</h3>
+          <p>Precio: $<span class="precio">3.000</span></p>
+          <button class="agregar-carrito" data-id="66" data-nombre="Primer Tango" data-precio="3000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-dhermosa.webp" alt="Primer D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Primer D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="67" data-nombre="Primer D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-en-barra-poros.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-en-barra-poros.webp" alt="Primer en barra disimula poros" class="imagen-producto">
+          </a>
+          <h3>Primer en barra disimula poros</h3>
+          <p>Precio: $<span class="precio">4.800</span></p>
+          <button class="agregar-carrito" data-id="68" data-nombre="Primer en barra disimula poros" data-precio="4800">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-mccosmetics-face.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-mccosmetics-face.webp" alt="Primer MC cosmetics" class="imagen-producto">
+          </a>
+          <h3>Primer MC cosmetics</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="69" data-nombre="Primer MC cosmetics" data-precio="4500">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-pink21-poros.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/primer-pink21-poros.webp" alt="Primer Pink 21" class="imagen-producto">
+          </a>
+          <h3>Primer Pink 21</h3>
+          <p>Precio: $<span class="precio">2.500</span></p>
+          <button class="agregar-carrito" data-id="70" data-nombre="Primer Pink 21" data-precio="2500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skincare -->
+    <section id="skincare" class="seccion-productos">
+      <h2>Skincare</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mousse-de-limpieza-facial.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/mousse-de-limpieza-facial.webp" alt="Mousse de limpieza facial" class="imagen-producto">
+          </a>
+          <h3>Mousse de limpieza facial</h3>
+          <p>Precio: $<span class="precio">8.500</span></p>
+          <button class="agregar-carrito" data-id="71" data-nombre="Mousse de limpieza facial" data-precio="8500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-en-barra-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-en-barra-dhermosa.webp" alt="Protector solar en barra D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Protector solar en barra D´hermosa</h3>
+          <p>Precio: $<span class="precio">5.500</span></p>
+          <button class="agregar-carrito" data-id="72" data-nombre="Protector solar en barra D´hermosa" data-precio="5500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-dhermosa.webp" alt="Protector solar D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Protector solar D´hermosa</h3>
+          <p>Precio: $<span class="precio">5.800</span></p>
+          <button class="agregar-carrito" data-id="73" data-nombre="Protector solar D´hermosa" data-precio="5800">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/jabon-facial-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/jabon-facial-dhermosa.webp" alt="Jabón facial D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Jabón facial D´hermosa</h3>
+          <p>Precio: $<span class="precio">6.800</span></p>
+          <button class="agregar-carrito" data-id="74" data-nombre="Jabón facial D´hermosa" data-precio="6800">Agregar al carrito</button>
+        </div>
+          <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/manteca-desmaquillante.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/manteca-desmaquillante.webp" alt="Manteca desmaquillante" class="imagen-producto">
+          </a>
+          <h3>Manteca desmaquillante</h3>
+          <p>Precio: $<span class="precio">5.800</span></p>
+          <button class="agregar-carrito" data-id="75" data-nombre="Manteca desmaquillante" data-precio="5800">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/serum-facial-dhermosa-trans.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/serum-facial-dhermosa-trans.webp" alt="Serum facial D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Serum facial D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.500</span></p>
+          <button class="agregar-carrito" data-id="76" data-nombre="Serum facial D´hermosa" data-precio="4500">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/serum-facial-dhermosa.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/serum-facial-dhermosa.webp" alt="Serum facial D´hermosa" class="imagen-producto">
+          </a>
+          <h3>Serum facial D´hermosa</h3>
+          <p>Precio: $<span class="precio">4.000</span></p>
+          <button class="agregar-carrito" data-id="77" data-nombre="Serum facial D´hermosa" data-precio="4000">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-spray.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/protector-solar-spray.webp" alt="Spray protector solar" class="imagen-producto">
+          </a>
+          <h3>Spray protector solar</h3>
+          <p>Precio: $<span class="precio">8.500</span></p>
+          <button class="agregar-carrito" data-id="78" data-nombre="Spray protector solar" data-precio="8500">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+     <!--Uñas -->
+     <section id="uñas" class="seccion-productos">
+      <h2>Uñas</h2>
+      
+    </section>
+ <!-- Skalas -->
+ <section id="skalas" class="seccion-productos">
+  <h2>Skalas</h2>
+  
+</section>
+    <!-- Varios -->
+    <section id="varios" class="seccion-productos">
+      <h2>Varios</h2>
+      <div class="productos-container">
+        <div class="producto">
+          <a href="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/anillos-regulables.webp" data-lightbox="galeria" data-title="">
+            <img src="https://raw.githubusercontent.com/Leogalazzo/productos-webp/refs/heads/main/anillos-regulables.webp" alt="Anillos regulables" class="imagen-producto">
+          </a>
+          <h3>Anillos regulables</h3>
+          <p>Precio: $<span class="precio">1.200</span></p>
+          <button class="agregar-carrito" data-id="79" data-nombre="Añillos regulables" data-precio="1200">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resto de las secciones de productos (misma estructura) -->
+    
+  </main>
+
+  <footer>
+    <div class="footer-redes">
+      <a href="https://www.instagram.com/taby.makeup/" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/5493735401893?text=Hola%20quiero%20hacer%20una%20consulta" target="_blank" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+      </a>
+    </div>
+    <p>&copy; 2025 TabyMakeup. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Mostrar/ocultar el botón según scroll
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollTopBtn.style.display = "block";
+      } else {
+        scrollTopBtn.style.display = "none";
+      }
+    };
+  
+    // Volver arriba
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+  
+</body>
+</html>
